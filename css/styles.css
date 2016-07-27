@@ -2,7 +2,9 @@ body {
 	margin: 0;
   font-family: 'Roboto Condensed', Arial;
   font-weight: 400;
-	font-size: 16px;
+	font-size: 1.2rem;
+	width: 100vw;
+	overflow-x: hidden;
   font-variant-ligatures: no-common-ligatures;
 }
 
@@ -17,6 +19,9 @@ li {
   padding-bottom: 10px;
 }
 
+hr {
+  width: 50%;
+}
 
 .text-center {
   text-align: center;
@@ -27,8 +32,6 @@ li {
 }
 
 .nav-content {
-  margin-top: 4px;
-  line-height: 69px;
   margin-left: 30px;
   font-family: 'Roboto Condensed';
 	font-weight: 300;
@@ -50,7 +53,7 @@ li {
 }
 
 .jumbo-pic {
-  font-size: 240px !important;
+  font-size: 14.4rem !important;
   margin-top: -30px;
 }
 
@@ -62,36 +65,44 @@ li {
 	background-color:#243657;
 	z-index:9999;
 	display: none;
-  font-size: 26px;
+  font-size: 1.5rem;
 }
 
 .header-container {
   font-family: 'Roboto Condensed';
 	font-weight: 900;
-  color: white;
 }
 
 .header {
   position: relative;
-  height: 90px;
+  height: 6.0rem;
   display: flex;
 }
 
-.header-two {
-  position: relative;
-  height: 90px;
-  display: flex;
+.sub-header {
+	position: relative;
+	height: 2.0rem;
+	display: flex;
 }
 
 .jake {
-  line-height: 90px;
-  font-size: 90px;
+  line-height: 6.0rem;
+  font-size: 6.0rem;
 	font-weight: 300;
   margin: 0 auto;
+  color: white;
+}
+
+.sub-jake {
+	line-height: 2.0rem;
+  font-size: 2.0rem;
+	font-weight: 300;
+  margin: 0 auto;
+  color: white;
 }
 
 .portrait {
-  min-height: 420px;
+  min-height: 360px;
 
 }
 
@@ -100,7 +111,7 @@ li {
     display: flex;
     width: 50%;
     float: left;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 .picture {
   height: 220px;
@@ -112,11 +123,8 @@ li {
 }
 
 .github-picture {
-  height: 220px;
-  width: 220px;
   border-radius: 50%;
   margin: 0 auto;
-  margin-top: 10px;
 }
 
 .github-picture a {
@@ -127,37 +135,51 @@ li {
   color: tomato;
 }
 
-.content {
-  overflow-x: hidden;
-}
-
 .content-header {
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
-	font-size: 26px;
+	font-size: 1.5rem;
 	background-color: #152A44;
 	color: white;
 }
 
 .summary-container {
-	margin-top: -40px;
+	margin: 0 auto;
 	padding-top: 40px;
 	height: 100%;
 }
 
-.summary-section {
+.summary-pane {
+	width: calc(100vw - 40px);
   max-width: 500px;
+	height: 280px;
   margin: 0 auto;
-  background-color: white;
   border-radius: 10px;
-  margin-bottom: 40px;
+	text-align: center;
   box-shadow: 3px 3px 20px black;
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .summary {
-  padding: 30px 50px;
-  margin-top: 10px;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contact-pane {
+	height: 120px;
+	padding: 0;
+	margin: 0;
+}
+
+.contact-section {
+	color: white;
 }
 
 .summary-end {
@@ -172,11 +194,6 @@ li {
   position: fixed;
 }
 
-hr {
-  width: 50%;
-  margin-top: 0;
-	margin-bottom: 0;
-}
 
 .about-pane {
   margin: 0 auto;
@@ -185,10 +202,11 @@ hr {
   float: left;
 	padding: 0px 5px;
   justify-content: center;
+
 }
 
 .section-header {
-	font-size: 26px;
+	font-size: 1.5rem;
 	background-color: white;
 	margin: 10px 0px;
 }
@@ -198,6 +216,7 @@ hr {
 	min-height: 950px;
 	width: 100%;
 	background-image: url('../assets/galaxy.jpg');
+	background-size: cover;
 }
 
 .education-pane {
@@ -216,9 +235,9 @@ hr {
 .about-container {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 	padding: 10px 0px;
 	background-color: #AEC7D5;
+	overflow: auto;
 }
 
 .skills-container {
@@ -234,10 +253,8 @@ hr {
 
 .skills-pane {
 	display: inline-block;
-  margin: 0 auto;
   margin: 10px;
   background-color: white;
-  width: calc(50% - 50px);
   height: 140px;
   border-radius: 10px;
   width: 450px;
@@ -250,14 +267,14 @@ hr {
 }
 
 .star {
-	font-size: 26px !important;
+	font-size: 1.5rem !important;
 }
 
 .devicon {
   padding-left: 30px;
   padding-top: 40px;
   margin-right: 5%;
-  font-size: 60px;
+  font-size: 3.8rem;
   float: left;
 }
 
@@ -265,40 +282,32 @@ hr {
   margin-left: 100px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 619px) {
-	.hero {
-		min-height: 1250px;
-	}
+/* START OF MEDIA QUERIES */
 
+@media only screen and (min-width: 0px) and (max-width: 619px) {
 	.education-pane {
 		max-height: 1050px;
 	}
-}
 
-@media only screen and (min-width: 620px) and (max-width: 757px) {
-	.hero {
-		min-height: 1050px;
+	.jumbo-pic {
+		font-size: 10.0rem !important;
+	}
+
+	.image-container {
+		margin-top: 130px;
 	}
 }
 
 
 @media only screen and (min-width: 0px) and (max-width: 1000px) {
 	.about-pane {
-		width: calc(100% - 10px);
+		width: calc(100% - 28px);
 		padding: 10px 5px;
-	}
-
-	.body {
-		width: 500px;
-		overflow: hidden;
-	}
-
-	.text-center {
-		font-size: 26px;
 	}
 
 	.summary-section {
 		max-width: calc(100% - 10px);
+		float: left;
 	}
 
 	}
