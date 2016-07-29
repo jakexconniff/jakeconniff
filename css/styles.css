@@ -1,3 +1,18 @@
+/* ANIMATIONS */
+@keyframes fadeIn {
+  0%   {  opacity: 0 }
+  100% {  opacity: 1 }
+}
+
+.anim-fade-in {
+  animation: fadeIn ease-in 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+/* HTML ELEMENTS */
+
 body {
 	margin: 0;
   font-family: 'Roboto Condensed', Arial;
@@ -23,8 +38,18 @@ hr {
   width: 50%;
 }
 
+/* MAIN STYLES */
+
 .text-center {
   text-align: center;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
 }
 
 .logo-offset {
@@ -147,7 +172,6 @@ hr {
 .summary-container {
 	margin: 0 auto;
 	padding-top: 40px;
-	height: 100%;
 }
 
 .summary-pane {
