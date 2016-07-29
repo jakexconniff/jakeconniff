@@ -32,10 +32,15 @@ ul {
 li {
   list-style: none;
   padding-bottom: 10px;
+	min-height: 50px;
 }
 
 hr {
   width: 50%;
+}
+
+h2 {
+	font-size: 1.4em;
 }
 
 /* MAIN STYLES */
@@ -53,7 +58,7 @@ hr {
 }
 
 .logo-offset {
-  margin-right: 10vw;
+  margin-right: 96px;
 }
 
 .nav-content {
@@ -180,7 +185,6 @@ hr {
 	height: 280px;
   margin: 0 auto;
   border-radius: 10px;
-	text-align: center;
   box-shadow: 3px 3px 20px black;
 	color: white;
 	vertical-align: middle;
@@ -296,6 +300,8 @@ hr {
   margin-right: 5%;
   font-size: 3.8rem;
   float: left;
+	width: 90.8px;
+	height: 101px;
 }
 
 .skill-label {
