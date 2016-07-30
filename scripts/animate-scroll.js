@@ -3,19 +3,18 @@ let elPos = '';
 
 function scroller() {
   let posY = window.pageYOffset;
+
   for (var i = 0; i < animations.length; i++) {
     let elPos = animations[i].offsetTop - window.innerHeight;
-    if (
-        (
-          (posY > elPos) &&
-          ($(animations[i]).hasClass('hidden'))
-        ) ||
-        (elPos == 0)
-      ) {
-      console.log("Item: " + i + " on the screen!");
-      console.log(animations[i]);
+
+    if (((posY > elPos) && ($(animations[i]).hasClass('hidden'))) || (elPos == 0)) {
       $(animations[i]).removeClass("hidden");
-      $(animations[i]).addClass("anim-fade-in");
+      if ($(animations[i]).hasClass('in')) {
+        $(animations[i]).addClass('anim-fade-in');
+      }
+      else if ($(animations[i]).hasClass('up')) {
+        $(animations[i]).addClass('anim-fade-up');
+      }
     }
   }
 }
@@ -23,7 +22,5 @@ function scroller() {
 scroller();
 
 $(window).on('scroll', _.throttle(function() {
-  console.log("TEST");
   scroller();
 }, 120));
-console.log(animations);

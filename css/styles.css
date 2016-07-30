@@ -4,10 +4,22 @@
   100% {  opacity: 1 }
 }
 
+@keyframes slideUp {
+	0%   { transform: translateY(100%) }
+	100% { transform: translateY(0%) }
+}
+
 .anim-fade-in {
   animation: fadeIn ease-in 1;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.anim-fade-up {
+	transform: translateY(100%);
+	animation: slideUp ease-in .5s;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
 }
 
 
@@ -253,7 +265,8 @@ h2 {
 }
 
 .education-img {
-	max-height: 200px;
+	height: 200px;
+	width: 200px;
 }
 
 .about-container {
