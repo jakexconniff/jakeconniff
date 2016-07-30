@@ -95,7 +95,7 @@ h2 {
 	background-color:#243657;
 	z-index:9999;
 	display: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .header-container {
@@ -169,7 +169,7 @@ h2 {
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	background-color: #152A44;
 	color: white;
 }
@@ -234,7 +234,7 @@ h2 {
 }
 
 .section-header {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	background-color: white;
 	margin: 10px 0px;
 }
@@ -291,7 +291,7 @@ h2 {
 }
 
 .star {
-	font-size: 1.5rem !important;
+	font-size: 1.3rem !important;
 }
 
 .devicon {
