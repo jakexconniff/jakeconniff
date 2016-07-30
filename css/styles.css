@@ -57,10 +57,6 @@ h2 {
 	opacity: 1;
 }
 
-.logo-offset {
-  margin-right: 96px;
-}
-
 .nav-content {
   margin-left: 30px;
   font-family: 'Roboto Condensed';
@@ -304,8 +300,8 @@ h2 {
 	height: 101px;
 }
 
-.skill-label {
-  margin-left: 100px;
+.logo-offset {
+	margin-right: 100px;
 }
 
 /* START OF MEDIA QUERIES */
@@ -328,6 +324,14 @@ h2 {
 
 	.image-container {
 		margin-top: 130px;
+	}
+
+	.skill-label {
+	  margin-right: 0px;
+	}
+
+	.logo-offset {
+		margin-right: 0px;
 	}
 
 }
