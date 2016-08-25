@@ -5,19 +5,19 @@
 }
 
 @keyframes slideUp {
-	0%   { transform: translateY(100%) }
-	100% { transform: translateY(0%) }
+	0%   { transform: translateY(20%) }
+	100% { transform: translateY(0%)   }
 }
 
 .anim-fade-in {
-  animation: fadeIn ease-in 1;
+  animation: fadeIn ease-out;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
 .anim-fade-up {
-	transform: translateY(100%);
-	animation: slideUp ease-in .5s;
+	transform: translateY(20%);
+	animation: slideUp ease-out;
 	animation-duration: .5s;
 	animation-fill-mode: forwards;
 }
@@ -82,7 +82,7 @@ h2 {
 }
 
 .nav-picture:hover {
-	color: tomato;
+	color: #F9EEC8;
 }
 
 .nav-icon {
@@ -170,7 +170,7 @@ h2 {
 }
 
 .github-picture a:hover {
-  color: tomato;
+  color: #F9EEC8;
 }
 
 .content-header {
@@ -292,6 +292,18 @@ h2 {
   border-radius: 2px;
   width: 450px;
   box-shadow: 3px 3px 20px black;
+}
+
+.skills-pane:hover {
+	background-image: url('../assets/galaxy.jpg');
+  background-position: bottom;
+  color: white;
+}
+
+.education-pane:hover {
+  background-image: url('../assets/galaxy.jpg');
+  background-position: bottom;
+  color: white;
 }
 
 .skills-box {
